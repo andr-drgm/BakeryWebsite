@@ -20,28 +20,31 @@ body{
     padding: 0;
 }
 
+br{
+    display: none;
+}
+
 .header{
     width: 100%;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    font-size: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
     margin: 0;
     text-align: center;
     background-color: #2c1f1b;
 }
 
 .image{
-    background-image: url('images/brutarie-11.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 40%;
+    background: transparent;
     background-size: cover;
-    height: 30%;
+    height: 100%;
     position: relative;
 }
 
 .title{
     position: relative;
-    top: 10%;
+    top: 20%;
 }
 
 .titleLogo{
@@ -56,91 +59,257 @@ body{
 
 h1{
     font-weight: 700;
-    font-size: 86px;
+    /* font-size: 86px; */
 }
 
 h2{
     font-weight: 400;
-    font-size: 64px;
+    /* font-size: 64px; */
+}
+
+a{
+    text-decoration: none;
+    color: #2c1f1b;
+    /* font-size: 52px; */
 }
 
 .text{
-    top: 10%;
+    display: none;
+    /* top: 10%; */
     color: #2c1f1b;
     position: relative;
     text-align: center;
-    height: max-content;
+    height: 100%;
+    z-index: 1;
 }
 
 .secondPage{
-    height: 100%;
+    display: none;
 }
 
 .thirdPage{
+    display: none;
+     height: 100%; 
+}
+
+.boxes{
+    height: 97%;
+}
+
+.row{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.box-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25%;
     height: 100%;
 }
 
-.contact{
-    top: 10%;
+.box-text{
+    width: 25%;
+    height: 100%;
     color: #2c1f1b;
-    position: relative;
     text-align: center;
-    height: max-content;
 }
 
 .contactData{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
     text-align: center;
     width: fit-content;
     height: fit-content;
   }
   
-  .dataPair{
+
+
+.locationIcon{
+background-image: url(./icons/pin.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 20px;
+height: 20px;
+padding-right: 24x;
+padding-top: 24px;
+}
+
+.phoneIcon{
+background-image: url(./icons/smartphone.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+width: 20px;
+height: 20px;
+padding-right: 24px;
+margin-top: 24px;
+}
+
+.copyright{
+  background-color: #2c1f1b;
+  color: #ebba98;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  padding: 8px;
+  height: 3%;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .boxes{
+        display: none;
+    }
+
+    .firstPage{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .header{
+        width: 100%;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 45px;
+        margin: 0;
+        text-align: center;
+        background-color: #2c1f1b;
+    }
+    
+    .image{
+        background-image: url('images/brutarie-11.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30%;
+        position: relative;
+    }
+    
+    .parallax-window{
+        position: relative;
+        top: 10%;
+        min-height: 400px;
+        background: transparent;
+    }
+    
+    .title{
+        position: relative;
+        top: 20%;
+    }
+    
+    .titleLogo{
+        font-size: 135px;
+        text-align: center;
+        color: #2c1f1b;
+        padding-bottom: 0;
+        margin: 0;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ebba98;
+    }
+    
+    h1{
+        font-weight: 700;
+        font-size: 86px;
+    }
+    
+    h2{
+        font-weight: 400;
+        font-size: 64px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #2c1f1b;
+        font-size: 52px;
+    }
+    
+    .text{
+        top: 10%;
+        color: #2c1f1b;
+        position: relative;
+        text-align: center;
+        height: max-content;
+    }
+    
+    .secondPage{
+        height: 100%;
+    }
+    
+    .thirdPage{
+         height: 100%; 
+    }
+    
+    .contact{
+        top: 10%;
+        color: #2c1f1b;
+        position: relative;
+        text-align: center;
+        height: 40%;
+    }
+    
+    .contactData{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%;
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+      }
+      
+    .dataPair{
     display: flex;
     flex-direction: row;
     height:15%;
     margin-top: 10px;
-  }
-  
-  .locationIcon{
-    background-image: url('/icons/pin.png');
+    padding-top: 24px;
+    }
+    
+    .locationIcon{
+    background-image: url(./icons/pin.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     left: 0;
-    width: 50px;
-    height: 25px;
-  }
-  
-  
-  .emailIcon{
-    background-image: url('/icons/email.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    left: 0;
-    width: 50px;
-    height: 25px;
-  }
-  
-  .phoneIcon{
+    width: 64px;
+    height: 64px;
+    padding-right: 36px;
+    }
+    
+    .phoneIcon{
     background-image: url(./icons/smartphone.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     left: 0;
-    width: 50px;
-    height: 25px;
-  }
-
-@media only screen and (max-width: 930px){
-    .image{
-        height: 100%;
+    width: 64px;
+    height: 64px;
+    padding-right: 36px;
+    }
+    
+    .copyright{
+      background-color: #2c1f1b;
+      color: #ebba98;
+      font-weight: 400;
+      font-size: 36px;
+      text-align: center;
+      padding: 16px;
     }
 }

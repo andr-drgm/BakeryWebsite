@@ -4,15 +4,18 @@
 <head>
     <title>Brutarie Costello</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
 </head>
 
 <body>
     <div class="firstPage">
         <h1 class="header">
             CS Costello Iimpex SRL
-        <br>str. Principală nr. 446, Brateiu 557055
+            <br>str. Principală nr. 446, Brateiu 557055
         </h1>
-        <div class="image">
+        <div class="image" data-parallax="scroll" data-z-index="0" data-image-src="images/brutarie-11.jpg"
+            style="height: 95.5%;">
             <div class="title">
                 <h1 class="titleLogo">Costello</h1>
                 <h1 class="titleLogo">Tradiție și calitate</h1>
@@ -30,20 +33,85 @@
             </h2>
         </div>
     </div>
+    <div class="boxes">
+        <div class="row">
+            <div class="box-image"
+                style='background-image: url("images/sliced-bread-and-stainless-steel-knife-on-top-of-brown-936190.jpg");'>
+            </div>
+            <div class="box-text">
+                <h1 class="textTitle">
+                    Coacem cu pasiune.
+                </h1>
+                <h2 class="content">
+                    Obiectivul nostru este să creăm mâncare delicioasă experiențe speciale și memorabile. Scopul nostru
+                    este
+                    să fim cunoscuți ca locul în care oaspeții sunt mulțumiți și oferim o mare varietate de produse
+                    pentru
+                    fiecare eveniment. Credem că clienții noștri sunt atuul nostru cel mai important.
+                </h2>
+            </div>
+            <div class="box-image"
+                style='background-image: url("images/strudel-3700357_1920.jpg"); background-position: bottom;'></div>
+            <div class="box-text">
+                <h1 class="textTitle">
+                    Calitatea este rețeta.
+                </h1>
+                <h2 class="content">
+                    Prima noastră brutărie, înființată în 1994, este în continuă dezvoltare. Brutarii noștri se asigură
+                    că
+                    toate produsele noastre sunt lucrate manual perfect, astfel încât să-i putem face pe toți fericiți.
+                    Continuăm să ne îmbunătățim produsele coapte în timp ce continuăm să experimentăm noi ingrediente și
+                    condimente și continuăm să încercăm lucruri noi.
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box-text">
+                <h1 class="textTitle">
+                    Incredibil de delicios.
+                </h1>
+                <h2 class="content">
+                    Brutaria noastră aduce arome și textură reală în rețetele preferate ale clienților noștri. Cu noi
+                    toți
+                    zâmbesc.
+                </h2>
+            </div>
+            <div class="box-image" style='background-image: url("images/brutarie-34.jpg");'></div>
+            <div class="box-text">
+                <div class="contactData">
+                    <h1>Contact</h1>
+                    <div class="dataPair">
+                        <div class="locationIcon"></div>
+                        <a class="dataText"
+                            href="https://www.google.ro/maps/place/SC+Costello+Impex+SRL/@46.1750752,24.4285975,17z/data=!3m1!4b1!4m5!3m4!1s0x474b8f3fb0ec1d47:0x8852fcd0181ad18f!8m2!3d46.1750752!4d24.4307861">str.
+                            Principală nr. 446, Brateiu 557055</a>
+                    </div>
+                    <div class="dataPair">
+                        <div class="phoneIcon"></div>
+                        <a class="dataText" href="tel:+40744663034">+40 744 663 034</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box-text">
+                <div style="width: 100%; height: 100%;"><iframe width="100%" height="99.9%" frameborder="0"
+                    scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=costello%20impex+(Costello%20Impex)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            </div>
+        </div>
+    </div>
     <!-- Second page -->
     <div class="secondPage">
-        <div class="image"
-            style='background-image: url("images/sliced-bread-and-stainless-steel-knife-on-top-of-brown-936190.jpg"); top:5%;'>
+        <div class="image" data-parallax="scroll" data-z-index="0"
+            data-image-src="images/sliced-bread-and-stainless-steel-knife-on-top-of-brown-936190.jpg">
         </div>
         <div class="text">
             <h1 class="textTitle">
-                Calitatea este rețeta.
+                Incredibil de delicios.
             </h1>
             <h2 class="content">
-                Prima noastră brutărie, înființată în 1994, este în continuă dezvoltare. Brutarii noștri se asigură că
-                toate produsele noastre sunt lucrate manual perfect, astfel încât să-i putem face pe toți fericiți.
-                Continuăm să ne îmbunătățim produsele coapte în timp ce continuăm să experimentăm noi ingrediente și
-                condimente și continuăm să încercăm lucruri noi.
+                Brutaria noastră aduce arome și textură reală în rețetele preferate ale clienților noștri. Cu noi toți
+                zâmbesc.
             </h2>
         </div>
     </div>
@@ -61,6 +129,7 @@
                 zâmbesc.
             </h2>
         </div>
+        
     </div>
     <!-- Contact Page -->
     <div class="thirdPage">
@@ -69,18 +138,25 @@
                 src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=costello%20impex+(Costello%20Impex)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
         <div class="contact">
-            <div className="contactData"> <h1>Contact</h1>
-                <div className="dataPair">
-                    <div className="locationIcon"></div>
-                    <a className="dataText" href="https://www.google.com/maps/place/Media%C8%99/">Mediaș, Sibiu</a>
-                  </div>
-                  <div className="dataPair">
-                    <div className="phoneIcon"></div>
-                    <a className="dataText" href="tel:+40744663034">+40 744 663 034</a>
-                  </div>
+            <div class="contactData">
+                <h1>Contact</h1>
+                <div class="dataPair">
+                    <div class="locationIcon"></div>
+                    <a class="dataText"
+                        href="https://www.google.ro/maps/place/SC+Costello+Impex+SRL/@46.1750752,24.4285975,17z/data=!3m1!4b1!4m5!3m4!1s0x474b8f3fb0ec1d47:0x8852fcd0181ad18f!8m2!3d46.1750752!4d24.4307861">str.
+                        Principală nr. 446, Brateiu 557055</a>
                 </div>
+                <div class="dataPair">
+                    <div class="phoneIcon"></div>
+                    <a class="dataText" href="tel:+40744663034">+40 744 663 034</a>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- CopyRight -->
+    <div class="copyright">© Copyright 2020 CS Costello Iimpex SRL.<br> Website created by <a
+            href="http://andr-drgm.github.io/"
+            style="color: #ebba98; font-size: 18px; text-decoration: underline;">Andrei Dragomir</a></div>
 </body>
 
 </html>
