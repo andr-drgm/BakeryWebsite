@@ -329,13 +329,14 @@ margin-top: 24px;
         width: 150px;
         height: 150px;
         border-radius: 100%;
-        box-shadow: 2px 2px 3px #2c1f1b;
+        box-shadow: 2px 2px 3px #000;
         right: 40px;
         bottom: 40px;
         text-align: center;
+        cursor: pointer;
     }
 
     .material-icons{
-        margin-top: 24px;
+        margin-top: 34px;
     }
 }
