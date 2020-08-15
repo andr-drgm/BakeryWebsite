@@ -71,8 +71,9 @@ br{
     color: #2c1f1b;
     padding-bottom: 0;
     margin: 0;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #ebba98;
+    text-shadow: 5px 5px 5px #000;
 }
 
 h1{
@@ -242,7 +243,7 @@ margin-top: 24px;
         color: #2c1f1b;
         padding-bottom: 0;
         margin: 0;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #ebba98;
     }
     
