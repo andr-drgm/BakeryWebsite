@@ -10,10 +10,7 @@
     <meta name="theme-color" content="#2c1f1b" />
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +19,7 @@
             CS Costello Impex SRL
             <br>str. Principală nr. 446, Brateiu 557055
         </h1>
-        <div class="image" data-parallax="scroll" data-z-index="0" data-image-src="images/brutarie-11.jpg"
+        <div class="parallax" 
             style="top: 0;">
             <div class="title">
                 <h1 class="titleLogo">Costello</h1>
@@ -85,7 +82,7 @@
                     zâmbesc.
                 </h2>
             </div>
-            <div class="box-image" style='background-image: url("images/brutarie-34.jpg");'></div>
+            <div class="box-image" style='background-image: url("images/bakery (6).jpg");'></div>
             <div class="box-text">
                 <div class="contactData">
                     <h1>Contact</h1>
@@ -167,11 +164,23 @@
     </div>
     <!-- CopyRight -->
     <div class="copyright">© Copyright 2020 CS Costello Impex SRL.<br> Website created by <a class="author"
-            href="http://andr-drgm.github.io/"
-            style="color: #ebba98; text-decoration: underline;">Andrei Dragomir</a></div>
+            href="http://andr-drgm.github.io/" style="color: #ebba98; text-decoration: underline;">Andrei Dragomir</a>
+    </div>
     <div class="callButton" onclick="location.href='tel:+40744663034';">
         <i class="material-icons" style="font-size: 82px;">call</i>
     </div>
+    <script>
+        var index = 1;
+        var parallax = document.getElementsByClassName('parallax')[0];
+        
+        setInterval(function(){
+            index = index + 1;
+            if(index == 9)
+                index = 1;
+            console.log(index);
+            parallax.style.backgroundImage = "url('images/bakery (" + index + ").jpg')";
+        }, 5000);
+    </script>
 </body>
 
 </html>
