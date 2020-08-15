@@ -36,8 +36,8 @@ br{
 
 .parallax{
     background-image: url("images/bakery (1).jpg");
-    /* transition: 1s, 2s;
-    transition-timing-function: ease; */
+    transition: 1s, 2s;
+    transition-timing-function: ease;
 
   /* Set a specific height */
   height: 500px;
